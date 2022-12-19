@@ -1,0 +1,26 @@
+{% extends "index_overview.html" %}
+
+{% block overview %}
+OWASP A1:2021 - Broken Access Control is a vulnerability in which access controls, such as authentication and authorization mechanisms, are not properly implemented or enforced. This can allow unauthorized users to access restricted resources or perform actions that they should not be able to perform.
+{% endblock overview %}
+
+{% block explain %}
+
+<p class="col-md-8 fs-6 fw-bold">Broken access control can occur when access control checks are not properly implemented or are bypassed, allowing unauthorized access to resources. This can happen in a variety of ways, such as:</p>
+<p class="col-md-8 fs-6">
+Lack of proper authentication: If an application does not properly authenticate users, anyone can access resources without providing proper credentials.
+</p>
+<p class="col-md-8 fs-6">
+Insecure direct object references: If an application does not properly validate input, an attacker can manipulate URLs or form parameters to access restricted resources.
+</p>
+<p class="col-md-8 fs-6">
+Lack of proper authorization: If an application does not properly check if a user is authorized to access a resource, an attacker can gain access to restricted resources.
+</p>
+<p class="col-md-8 fs-6">
+Misconfigured permissions: If an application has misconfigured permissions, it can allow unauthorized access to resources.
+</p>
+
+<a href="{{ url_for('a01_example') }}" class="btn btn-primary btn-lg" type="button">Example</a>
+<a href="{{ url_for('a01_howprevent') }}" class="btn btn-primary btn-lg" type="button">How can we prevent this?</a>
+
+{% endblock explain %}
