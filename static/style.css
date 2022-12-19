@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+}
+.subtitle {
+  padding-left: 50px;
+  text-decoration: none;
+  color: black;
+  }
+.tpadrao {
+  width: 300px;
+  /* text-align: left; */
+}
+.left {
+  flex: left;
+}
+.rigtht {
+  flex: right;
+}
